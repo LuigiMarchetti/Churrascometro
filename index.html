@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascômetro</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/icons8-bife-raro-48.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    
+    <header>
+        <div id="texto">
+            <h1>Churrascômetro
+                <!-- <img style="background: transparent;" src="./assets/png-transparent-tailgate-party-barbecue-drawing-barbecue-rack-food-logo-material.png" alt=""> -->
+            </h1> 
+            Saiba quanta comida e bebida vai precisar!
+        </div>
+        <div id="imagem"> 
+            <img src="./assets/icons8-meat-64 2.png" width="60px">
+        </div>
+    </header>
+    <div id="container">
+        <h1>Hora de Churrascar!</h1><br>
+            <input type="number" id="adultos" name="adultos" placeholder="Adultos" min="0" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /><br>
+            <input type="number" id="criancas" name="criancas" placeholder="Crianças" min="0" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /><br>
+            <input type="number" id="duracao" name="duracao" placeholder="Duração (hrs)" min="0" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /><br>
+        <br>
+        <button id="calcular" onclick="calcular()">Calcular</button>
+        
+        <div id="resultado">
+            <div id="resultadoCarne"></div>
+            <div id="resultadoCerveja"></div>
+            <div id="resultadoSuco"></div>
+        </div>
+    </div>
+    <footer>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

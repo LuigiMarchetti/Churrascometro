@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: peru;
+    max-height: 125px;
+}
+body{
+    background-image: url(./assets/Barbecue-meat-food_1920x1080.jpg);
+    box-sizing: border-box;
+}
+#texto{
+    padding: 20px 0px 20px 20px;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+}
+#imagem{
+    display: inline;
+}
+#container{
+    max-width: 500px;
+    background-color: dimgray;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+input{
+    box-sizing: border-box;
+    margin-top: 15px;
+    width: 220px;
+    padding: 5px;
+    border-radius: 10px;
+}
+button{
+    box-sizing: border-box;
+    width: 220px;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+footer{
+    height: 20px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+#resultado{
+    padding: 5%;
+    margin-top: 15px;
+}
+p{
+    margin: 15px;
+    font-size: 25px;
+}
